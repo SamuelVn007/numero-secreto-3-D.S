@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Sevillana&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --preto: rgb(10, 11, 16);
+    --cinza-claro: rgb(195, 206, 225);
+    --branco: #edf2f4ff;
+    --vermelho-pantone: #ef233cff;
+    --vermelho-forte: rgb(223, 0, 37);
+    --font-primaria: "Protest Guerrilla", sans-serif;
+    --font-secundaria: "Sevillana", cursive;
+}
+
+body{
+    background-color: var(--preto);
+    font-family: var(--font-secundaria);
+    color: var(--vermelho-forte);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    font-family: var(--font-primaria);
+    color: var(--branco);
+    font-size: 3em;
+}
+
+h3{
+    color: var(--vermelho-pantone);
+    font-family: var(--font-primaria);
+    font-size: 2em;
+}
+
+.mensagem{
+    font-size: 3em;
+    color: var(--vermelho-forte);
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: var(--branco);
+    padding: 20px;
+}
+
+.box{
+    border: 4px solid var(--vermelho-forte);
+    display: inline-block;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+}
