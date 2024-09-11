@@ -1,4 +1,4 @@
-    function verificaValorChuteFalso(chute){
+    function verificaValorChuteValido(chute){
         const numero = +chute
 
         if(chuteForInvalido(numero)){
@@ -10,7 +10,7 @@
         if( numero === numeroSecreto){
             document.body.innerHTML = `
             <h2> Você acertou!! </h2>
-            <<h3> O número secreto era ${numeroSecreto} </h3>
+            <h3> O número secreto era ${numeroSecreto} </h3>
             `
         }else if(numero > numeroSecreto) {
          Elementochute.innerHTML += `<div> O número secreto é menor</div>`
