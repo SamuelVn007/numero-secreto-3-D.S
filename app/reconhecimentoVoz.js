@@ -1,21 +1,21 @@
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
 
-const Elementchute = document.getElementById("chute")
+const elementochute = document.getElementById('chute')
 const recognition = new SpeechRecognition();
 recognition.lang = "pt-br";
 recognition.start()
 
 recognition.addEventListener("result", onSpeak)
-recognition.addEventListener("end", () => recognition.start())
+recognition.addEventListener('end', () => recognition.start())
 function onSpeak(e){
    chute = (e.results[0][0].transcript)
    exibeChute(chute)
-   verificaChuteValido(chute)
+   verificaValorChuteValido(chute)
 }
 
 function exibeChute(chute){
-  Elementchute.innerHTML = ` 
+  Elementochute.innerHTML = `
   <div> Você disse:</div>
   <span class="box">${chute}</span>
   `
