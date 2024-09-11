@@ -47,3 +47,10 @@ h3{
     background-color: var(--branco);
     padding: 20px;
 }
+
+h2{
+    font-size: 4em;
+    color: var(--vermelho-pantone);
+    text-shadow: 3px 3px 20px var(--branco);
+}
+ 

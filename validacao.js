@@ -2,10 +2,20 @@
         const numero = +chute
 
         if(chuteForInvalido(numero)){
-            console.log('Valor Inválido')
+            Elementochute.innerHTML += `<div>Valor Inválido</div>`
         }
         if(numeroForMaiorOuMenorQueOValorPermitido(numero)){
-            console.log(`Valor Inválido: O número secreto precisa estar entre ${menorValor} e ${maiorValor}`)
+            Elementochute.innerHTML += `<div> Valor Inválido: O número secreto precisa estar entre ${menorValor} e ${maiorValor} </div>`
+        }
+        if( numero === numeroSecreto){
+            document.body.innerHTML = `
+            <h2> Você acertou!! </h2>
+            <<h3> O número secreto era ${numeroSecreto} </h3>
+            `
+        }else if(numero > numeroSecreto) {
+         Elementochute.innerHTML += `<div> O número secreto é menor</div>`
+        } else{
+          Elementochute.innerHTML += `<div> O número secreto é maior </div>`  
         }
     }
 
